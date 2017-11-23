@@ -14,3 +14,4 @@
     check:
       jobs:
         - myjob-noop
+        - demo-rpmbuild
