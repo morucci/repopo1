@@ -11,3 +11,5 @@
         workspace: "{{ pwd_command.stdout }}"
     - name: List workspace
       command: "ls -al {{ workspace }}/"
+    - name: Fail
+      command: "false"
