@@ -14,4 +14,6 @@
     check:
       jobs:
         - myjob-noop
-        - demo-rpmbuild
+    gate:
+      jobs:
+        - myjob-noop
