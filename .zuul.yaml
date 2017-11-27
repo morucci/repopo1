@@ -11,7 +11,7 @@
 
 - project:
     name: morucci/repopo1
-    check:
+    check-github.com:
       jobs:
         - myjob-noop
     gate-github.com:
