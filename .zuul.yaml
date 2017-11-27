@@ -4,6 +4,9 @@
     parent: base
     description: This a noop job
     run: playbooks/noop.yaml
+    required-projects:
+      - morucci/repopo1
+      - morucci/repopo2
     nodeset:
       nodes:
         - name: test-node
