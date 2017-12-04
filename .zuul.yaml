@@ -4,9 +4,9 @@
     parent: base
     description: This a noop job
     run: playbooks/noop.yaml
-    required-projects:
-      - morucci/repopo1
-      - morucci/repopo2
+#    required-projects:
+#      - morucci/repopo1
+#      - morucci/repopo2
     nodeset:
       nodes:
         - name: test-node
@@ -24,11 +24,12 @@
         - name: test-node
           label: centos-oci
           
-#- project:
-#    name: morucci/repopo1
+- project:
+    name: morucci/repopo1
 #    check-github.com:
-#      jobs:
-#        - myjob-noop
+    post:
+      jobs:
+        - myjob-noop
 #        - myjob-noop2
 #    gate-github.com:
 #      queue: repopo-integrated
