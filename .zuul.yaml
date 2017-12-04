@@ -24,13 +24,13 @@
         - name: test-node
           label: centos-oci
           
-- project:
-    name: morucci/repopo1
-    check-github.com:
-      jobs:
-        - myjob-noop
-        - myjob-noop2
-    gate-github.com:
-      queue: repopo-integrated
-      jobs:
-        - myjob-noop
+#- project:
+#    name: morucci/repopo1
+#    check-github.com:
+#      jobs:
+#        - myjob-noop
+#        - myjob-noop2
+#    gate-github.com:
+#      queue: repopo-integrated
+#      jobs:
+#        - myjob-noop
