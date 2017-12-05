@@ -1,6 +1,6 @@
 ---
 - job:
-    name: myjob-noop
+    name: myjob-noopi
     parent: base
     description: This a noop job
     run: playbooks/noop.yaml
