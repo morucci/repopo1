@@ -15,7 +15,7 @@
 - project:
     name: morucci/repopo1
 #    check-github.com:
-    fabpost:
+    post:
       jobs:
         - myjob-noop
 #        - myjob-noop2
