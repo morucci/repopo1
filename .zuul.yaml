@@ -1,6 +1,6 @@
 ---
 - job:
-    name: myjob-noopg
+    name: myjob-nooph
     parent: base
     description: This a noop job
     run: playbooks/noop.yaml
@@ -17,7 +17,7 @@
 #    check-github.com:
     post:
       jobs:
-        - myjob-noopg
+        - myjob-nooph
 #        - myjob-noop2
 #    gate-github.com:
 #      queue: repopo-integrated
