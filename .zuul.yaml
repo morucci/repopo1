@@ -16,7 +16,7 @@
     name: morucci/repopo1
 #    check-github.com:
     post:
-      jobs:
+      fabjobs:
         - myjob-noop
 #        - myjob-noop2
 #    gate-github.com:
