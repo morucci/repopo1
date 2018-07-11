@@ -6,20 +6,15 @@
     run: playbooks/noop.yaml
     required-projects:
       - morucci/repopo1
-#      - morucci/repopo2
     nodeset:
       nodes:
         - name: test-node
-          label: centos-oci
+          label: runc-centos
           
 - project:
-    name: morucci/repopo1
-#    check-github.com:
-    post:
+    check:
       jobs:
         - myjob-noopl
-#        - myjob-noop2
-#    gate-github.com:
-#      queue: repopo-integrated
-#      jobs:
-#        - myjob-noop
+    gate:
+      jobs:
+        - myjob-noopl
