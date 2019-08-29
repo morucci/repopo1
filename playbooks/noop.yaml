@@ -2,4 +2,4 @@
 - hosts: all
   tasks:
     - name: Success
-      command: "true"
+      command: "false"
