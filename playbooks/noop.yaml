@@ -1,15 +1,5 @@
 ---
-- hosts: test-node
+- hosts: all
   tasks:
-    - name: "Get workspace directory"
-      command: pwd
-      register: pwd_command
-      args:
-        chdir: "src/{{ zuul.project.canonical_hostname }}/"
-    - name: "Set workspace"
-      set_fact:
-        workspace: "{{ pwd_command.stdout }}"
-    - name: List workspace
-      command: "ls -al {{ workspace }}/"
     - name: Success
       command: "true"

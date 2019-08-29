@@ -1,11 +1,12 @@
 ---
+- job:
+    name: mynoop
+    run: playbooks/noop.yaml
+
 - project:
     check:
       jobs:
-        - noop
+        - mynoop
     gate:
       jobs:
-        - noop
-    post:
-      jobs:
-        - noop
+        - mynoop
